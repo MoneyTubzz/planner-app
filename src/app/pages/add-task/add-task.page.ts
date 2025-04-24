@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-add-task',
   templateUrl: './add-task.page.html',
   styleUrls: ['./add-task.page.scss'],
+  standalone: false,
 })
 export class AddTaskPage implements OnInit {
 

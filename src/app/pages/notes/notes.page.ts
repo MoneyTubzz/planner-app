@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-notes',
   templateUrl: './notes.page.html',
   styleUrls: ['./notes.page.scss'],
+  standalone: false,
 })
 export class NotesPage implements OnInit {
 
