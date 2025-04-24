@@ -1,13 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>add-task</ion-title>
+    <ion-title>ADD TASK</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">add-task</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-input label="Task Name" labelPlacement="floating" type="text" [(ngModel)]="task.name" name="name" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Description" labelPlacement="floating" type="text" [(ngModel)]="task.description" name="name" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Start Date"  labelPlacement="stacked" type="date" [(ngModel)]="task.start" name="start"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-input label="End Date"  labelPlacement="stacked" type="date" [(ngModel)]="task.end" name="start"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <div style="text-align: center; ">
+    <ion-button (click)="submitTask()">Submit Task</ion-button>
+  </div>
+  
 </ion-content>
